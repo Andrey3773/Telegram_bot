@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS data (
     nick TEXT,
     in_game BOOL,
     in_competition BOOL,
-    secret INTEGER,
+    secret INTEGER, 
     attempts INTEGER,
     segment INTEGER,
     games INTEGER,
