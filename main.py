@@ -2,7 +2,7 @@ from aiogram import *
 from aiogram.filters import *
 from aiogram.types import *
 from functions import *
-from token import BOT_TOKEN
+from bot_token import BOT_TOKEN
 import sqlite3
 
 # РЕГИСТРАЦИЯ ПЕРЕМЕННОЙ БОТА И ДИСПЕТЧЕРА
@@ -11,7 +11,7 @@ dp = Dispatcher()
 
 
 # СОЗДАНИЕ БАЗЫ ДАННЫХ
-db = sqlite3.connect('../trash/database.sqlite')
+db = sqlite3.connect('database.sqlite')
 cursor = db.cursor()
 
 cursor.execute('''
