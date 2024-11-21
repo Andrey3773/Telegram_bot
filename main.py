@@ -388,7 +388,7 @@ async def numbers(message: Message):
                 if sel_data("attempts", message) > 0:
                     await message.answer('Нет, не угадал, моё число меньше.')
             else:
-                update_data("attempts", sel_data("attempts", message)- 1, message)
+                update_data("attempts", sel_data("attempts", message) - 1, message)
                 if sel_data("attempts", message) > 0:
                     await message.answer('Нет, не угадал, моё число больше.')
             if sel_data("attempts", message) == 0:
